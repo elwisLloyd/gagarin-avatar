@@ -201,30 +201,17 @@
 
 ## 8. Список источников
 
-1. Reallusion Character Creator. URL: https://www.reallusion.com/character-creator/ (дата обращения: 22.02.2026).
-2. NVIDIA Audio2Face. URL: https://www.nvidia.com/en-us/omniverse/apps/audio2face/ (дата обращения: 22.02.2026).
-3. OpenAI API Documentation. URL: https://platform.openai.com/docs/ (дата обращения: 22.02.2026).
-4. ElevenLabs Text-to-Speech API. URL: https://elevenlabs.io/docs (дата обращения: 22.02.2026).
-5. Jurafsky D., Martin J.H. Speech and Language Processing (3rd ed. draft). URL: https://web.stanford.edu/~jurafsky/slp3/ (дата обращения: 22.02.2026).
-6. Vaswani A. et al. Attention Is All You Need // NeurIPS, 2017. URL: https://arxiv.org/abs/1706.03762 (дата обращения: 22.02.2026).
-7. OECD. PISA 2022 Results (Volume I): The State of Learning and Equity in Education. URL: https://www.oecd.org/pisa/publications/pisa-2022-results-volume-i-53f23881-en.htm (дата обращения: 22.02.2026).
-8. World Economic Forum. Future of Jobs Report 2025. URL: https://www.weforum.org/publications/the-future-of-jobs-report-2025/ (дата обращения: 22.02.2026).
-9. Минпросвещения России. Единая модель профориентации «Билет в будущее». URL: https://bvbinfo.ru/ (дата обращения: 22.02.2026).
-10. ГОСТ Р 7.0.5-2008. Библиографическая ссылка. Общие требования и правила составления.
+1. Reallusion Character Creator. URL: https://www.reallusion.com/character-creator/ (дата обращения: 15.02.2026).
+2. NVIDIA Audio2Face. URL: https://www.nvidia.com/en-us/omniverse/apps/audio2face/ (дата обращения: 15.02.2026).
+3. OpenAI API Documentation. URL: https://platform.openai.com/docs/ (дата обращения: 15.02.2026).
+4. ElevenLabs Text-to-Speech API. URL: https://elevenlabs.io/docs (дата обращения: 15.02.2026).
+5. Jurafsky D., Martin J.H. Speech and Language Processing (3rd ed. draft). URL: https://web.stanford.edu/~jurafsky/slp3/ (дата обращения: 15.02.2026).
+6. Vaswani A. et al. Attention Is All You Need // NeurIPS, 2017. URL: https://arxiv.org/abs/1706.03762 (дата обращения: 15.02.2026).
+7. ГОСТ Р 7.0.5-2008. Библиографическая ссылка. Общие требования и правила составления.
 
 ---
 
-## 9. Приложение: единый листинг программного кода
-
-Полный листинг прототипа в формате «весь код в одном файле» вынесен в отдельный файл-приложение:
-
-- `docs/appendix_code_listing.py`
-
-Этот файл содержит единую версию основных компонентов (`SessionController`, `ASRAdapter`, `DialogCore`, `TTSService`, `AnimationBridge`) для чтения, рецензирования и демонстрации внутреннего устройства проекта.
-
----
-
-## 10. Краткий план доклада (7–10 минут)
+## 9. Краткий план доклада (7–10 минут)
 
 1. Проблема и цель проекта (1 мин).  
 2. Архитектура и демонстрация пайплайна (2–3 мин).  
