@@ -26,6 +26,7 @@ from pathlib import Path
 from typing import List, Optional
 
 import requests
+import speech_recognition as sr
 
 
 # =========================
@@ -85,15 +86,32 @@ class AppConfig:
 class ASRAdapter:
     """Преобразование аудио в текст.
 
-    В реальном проекте здесь подключается Whisper/Streaming ASR.
+    Реализация через Google Web Speech API
+    (модуль SpeechRecognition, метод recognize_google).
     """
 
+    def __init__(self, language: str = "ru-RU", sample_width: int = 2):
+        self.language = language
+        self.sample_width = sample_width
+        self.recognizer = sr.Recognizer()
+
     def transcribe(self, audio_chunk: AudioChunk) -> str:
-        # Демо-режим: в production должен быть вызов реального ASR
         # Сложность обработки входного окна: O(n), где n — число сэмплов.
         if not audio_chunk.data:
             return ""
-        return "[распознанный текст пользователя]"
+
+        audio = sr.AudioData(
+            frame_data=audio_chunk.data,
+            sample_rate=audio_chunk.sample_rate,
+            sample_width=self.sample_width,
+        )
+
+        try:
+            return self.recognizer.recognize_google(audio, language=self.language).strip()
+        except sr.UnknownValueError:
+            return ""
+        except sr.RequestError as e:
+            return f"[ASR error: {e}]"
 
 
 # =========================
